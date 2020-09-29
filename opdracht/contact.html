@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Contact</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <script src="contact.js"></script>
+        <nav id="cont_nav">
+            <ul>
+                <li><a href="/index.html">HOME</a></li>
+                <li><a href="/portfolio.html">PORTFOLIO</a></li>
+                <li><a href="/contact.html">CONTACT</a></li>
+            </ul>
+        </nav>
+        <div class="contactdiv">
+            <p id="cont_head">Contact formulier</p>
+            <p id="cont_p">Vul dit contactformulier in en dan neemt Samy Farahat zo snel mogelijk contact met u op. Gemiddelde wachttijd is ca. twee tot 3 werkdagen. Indien spoed kunt u het spoed vakje aanvinken!</p>
+            <form class="contactform" action="">
+                <label for="vname">Voornaam</label>
+                <input type="text" name="name" id="vnaam" placeholder="Voornaam" required>
+
+                <label for="anaam">Achternaam</label>
+                <input type="text" name="anaam" id="anaam" placeholder="Achternaam" required>
+                
+                <label for="email">E-mail</label>
+                <input type="text" name="email" id="email" placeholder="E-mail" required>
+                
+                <label for="onderwerp">Onderwerp</label>
+                <textarea id="onderwerp" name="onderwerp" placeholder="Schrijf hier uw bericht naar Samy Farahat."  required></textarea>
+                <label for="spoed">Moet er met spoed contact opgenomen worden?</label>
+                <br>
+                <select id="spoed" name="spoed" placeholder="boed">
+                    <option selected="selected">Nee</option>
+                    <option>Ja</option>
+                </select>
+                <div class="submit_div">
+                    <input type="submit" id="submit" value="Verstuur contactformulier" onclick="verstuur()">
+                </div>
+            </form>
+        </div>
+    </body>
+</html>
